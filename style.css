@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primaryBrightOrange: hsl(31, 77%, 52%);
+  --primaryDarkCyan: hsl(184, 100%, 22%);
+  --primaryVeryDarkCyan: hsl(179, 100%, 13%);
+  --TransparentParagraphs: hsla(0, 0%, 100%, 0.75);
+  --backgroundHeadingsButtons: hsl(0, 0%, 95%);
+  --bigFont: "Big Shoulders Display", sans-serif;
+  --lexendFont: "Lexend Deca", sans-serif;
+}
+body {
+  font-size: 15px;
+  background: var(--backgroundHeadingsButtons);
+  height: 100vh;
+}
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 85px;
+}
+.card {
+  width: 260px;
+  height: 425px;
+  padding: 35px 50px 35px 35px;
+}
+.card-img {
+  width: 55px;
+}
+.card-img {
+  width: 100%;
+}
+.sed {
+  background-color: var(--primaryBrightOrange);
+  border-radius: 10px 0 0 10px;
+}
+.suv {
+  background-color: var(--primaryDarkCyan);
+}
+.lux {
+  background-color: var(--primaryVeryDarkCyan);
+  border-radius: 0 10px 10px 0;
+}
+.card h1 {
+  text-transform: uppercase;
+  color: var(--backgroundHeadingsButtons);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-weight: 700;
+  font-family: var(--bigFont);
+  font-size: 32px;
+}
+.card p {
+  color: var(--TransparentParagraphs);
+  font-family: var(--lexendFont);
+  font-weight: 400;
+  line-height: 22px;
+}
+.card-btn {
+  padding-top: 50px;
+}
+.card .card-btn button {
+  width: 125px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.card .card-btn:hover .changeBtn {
+  background-color: transparent;
+  border: 2px solid white;
+  color: #fff;
+}
+
+.card-btn .sed-btn {
+  color: var(--primaryBrightOrange);
+}
+.card-btn .suv-btn {
+  color: var(--primaryDarkCyan);
+}
+.card-btn .lux-btn {
+  color: var(--primaryVeryDarkCyan);
+}
+
+@media screen and (max-width: 375px) {
+  .card-container {
+    flex-direction: column;
+  }
+  .sed {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .lux {
+    border-radius: 0 0 10px 10px;
+  }
+}
